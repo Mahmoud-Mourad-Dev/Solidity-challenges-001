@@ -25,9 +25,9 @@ contract A {
 # Resolve 
 ![1- first time i ask myself Question Can i call internal function f() from contract B which inherit from contract A](https://github.com/Mahmoud-Mourad-Dev/Solidity-challenges-001/assets/35864731/71e2aa97-a9af-4da7-8a09-71be5bf04340)
 
-## I ask Ai Yes we can call  internal function f() in contract B which inherit from contract A 
-## In Solidity, an internal function is accessible only within the contract in which it is defined and by contracts that inherit from it
-## I try to compile code in remix -It is ok- i changed function f() visibility from intenal to public and try to compile ERROR
+### I ask Ai Yes we can call  internal function f() in contract B which inherit from contract A 
+### In Solidity, an internal function is accessible only within the contract in which it is defined and by contracts that inherit from it
+### I try to compile code in remix -It is ok- i changed function f() visibility from intenal to public and try to compile ERROR
 ```solidity
 
 // SPDX-License-Identifier: MIT
@@ -54,8 +54,8 @@ contract A {
 
 ![Contract Visibility](https://github.com/Mahmoud-Mourad-Dev/Solidity-challenges-001/assets/35864731/02bdd613-61d6-433b-bd13-9f421abfa874)
 
-## I think Y value return 42 same value of Function F()
-## But when i try code in remix Y value return 0 
+### I think Y value return 42 same value of Function F()
+### But when i try code in remix Y value return 0 
 ```solidity
 
 // SPDX-License-Identifier: MIT
@@ -76,7 +76,7 @@ contract A {
      // Y output = 0
 
 ```
-## I change F() visibility to public to see F() function value
+### I change F() visibility to public to see F() function value
 
 ```solidity
 
