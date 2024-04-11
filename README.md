@@ -112,14 +112,14 @@ contract A {
 ![Why y is 0](https://github.com/Mahmoud-Mourad-Dev/Solidity-challenges-001/assets/35864731/2b6eaba1-6642-4666-bef4-62d3418d3be4)
 
 ## what happens in your contracts A and B is as follows:
-### 1-When contract B is deployed, the Solidity runtime first initializes state variables,including y. 
-### 2-At this point, it attempts to set y to the return value of f().
-### 3-However, this initialization of y happens before any constructor is executed.
-### 4-This means it occurs before the constructor of A has a chance to run and initialize x with 42.
-### 5-The function f() is called to initialize y before x is set.
-### 6-Since x is an immutable variable and must be initialized in the constructor, it hasn't been assigned yet, 
-### 7-effectively making it 0 (the default value for uninitialized uint variables) at the time f() is called.
-### 8-As a result, f() returns 0, and y is initialized with this value.
+#### 1-When contract B is deployed, the Solidity runtime first initializes state variables,including y. 
+#### 2-At this point, it attempts to set y to the return value of f().
+#### 3-However, this initialization of y happens before any constructor is executed.
+#### 4-This means it occurs before the constructor of A has a chance to run and initialize x with 42.
+#### 5-The function f() is called to initialize y before x is set.
+#### 6-Since x is an immutable variable and must be initialized in the constructor, it hasn't been assigned yet, 
+#### 7-effectively making it 0 (the default value for uninitialized uint variables) at the time f() is called.
+#### 8-As a result, f() returns 0, and y is initialized with this value.
 ![Fixed Code](https://github.com/Mahmoud-Mourad-Dev/Solidity-challenges-001/assets/35864731/6e059a65-22a3-48d3-9888-9181812e023d)
 
 ```solidity
