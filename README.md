@@ -27,7 +27,7 @@ contract A {
 
 ### I ask Ai Yes we can call  internal function f() in contract B which inherit from contract A 
 ### In Solidity, an internal function is accessible only within the contract in which it is defined and by contracts that inherit from it
-### I try to compile code in remix -It is ok- i changed function f() visibility from intenal to public and try to compile ERROR
+### I try to compile code in remix -It is ok- i changed function f() visibility from internal to public and try to compile ERROR
 ```solidity
 
 // SPDX-License-Identifier: MIT
